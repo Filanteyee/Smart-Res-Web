@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Services — SmartResidency</title>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <a href="index.html" class="logo">
+    <div class="logo-icon">
+      <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M3 10.5L12 3L21 10.5V20C21 20.55 20.55 21 20 21H15V16H9V21H4C3.45 21 3 20.55 3 20V10.5Z" fill="#b5ff3a"/>
+      </svg>
+    </div>
+    SmartResidency
+  </a>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="services.html">Services</a></li>
+    <li><a href="about.html">About Us</a></li>
+    <li><a href="contacts.html">Contact Us</a></li>
+  </ul>
+  <a href="contacts.html" class="nav-btn">Request a demo</a>
+</nav>
+
+<!-- PAGE HERO -->
+<div class="page-hero">
+  <div class="page-hero-left">
+    <div class="page-hero-label">Services</div>
+    <h1>Everything your complex needs in one app</h1>
+  </div>
+  <div class="page-hero-right">
+    <p>SmartResidency brings together six core modules — from guest access and barrier control to real-time sensor monitoring and community voting. Select a service below to explore what it does.</p>
+  </div>
+</div>
+
+<!-- TABS -->
+<div class="section-wrap">
+
+  <div class="service-tabs">
+    <button class="service-tab active" data-target="panel-guest">Guest Access</button>
+    <button class="service-tab" data-target="panel-requests">Service Requests</button>
+    <button class="service-tab" data-target="panel-barrier">Barrier &amp; Parking</button>
+    <button class="service-tab" data-target="panel-communication">Communication</button>
+    <button class="service-tab" data-target="panel-voting">Resident Voting</button>
+    <button class="service-tab" data-target="panel-analytics">Analytics</button>
+  </div>
+
+  <div class="service-panels-wrap">
+
+    <!-- PANEL 1: GUEST ACCESS -->
+    <div class="service-panel active" id="panel-guest">
+      <div class="panel-text">
+        <div class="panel-number">01</div>
+        <div class="panel-tag">Guest Access &amp; Passes</div>
+        <h2>Let your guests in without leaving your apartment</h2>
+        <p>Residents generate a digital QR pass directly from the app. Guards scan it at the entrance — no calls, no waiting, no paper.</p>
+        <ul class="service-features">
+          <li>Generate a QR pass for any guest in seconds</li>
+          <li>Set a custom validity period for each pass</li>
+          <li>Guards validate passes instantly via the app</li>
+          <li>Full history of all guest visits</li>
+          <li>Manage multiple active passes simultaneously</li>
+        </ul>
+      </div>
+      <div class="panel-visual green">
+        <svg viewBox="0 0 280 280" xmlns="http://www.w3.org/2000/svg">
+          <!-- Pass card -->
+          <rect x="20" y="50" width="150" height="100" rx="16" fill="#fff" stroke="#191a23" stroke-width="2.5"/>
+          <rect x="38" y="76" width="114" height="14" rx="5" fill="#191a23" opacity="0.2"/>
+          <rect x="38" y="98" width="76" height="14" rx="5" fill="#191a23"/>
+          <rect x="38" y="118" width="90" height="10" rx="4" fill="#191a23" opacity="0.15"/>
+          <!-- Check circle -->
+          <circle cx="218" cy="100" r="44" fill="#191a23"/>
+          <path d="M200 100 l14 14 26-26" stroke="#b5ff3a" stroke-width="5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+          <!-- QR code -->
+          <rect x="70" y="178" width="96" height="96" rx="10" fill="#191a23"/>
+          <!-- QR blocks -->
+          <rect x="80" y="188" width="20" height="20" rx="3" fill="#b5ff3a"/>
+          <rect x="106" y="188" width="8" height="8" rx="1" fill="#b5ff3a"/>
+          <rect x="118" y="188" width="8" height="8" rx="1" fill="#b5ff3a"/>
+          <rect x="136" y="188" width="22" height="20" rx="3" fill="#b5ff3a"/>
+          <rect x="80" y="212" width="8" height="8" rx="1" fill="#b5ff3a"/>
+          <rect x="106" y="206" width="20" height="12" rx="2" fill="#b5ff3a"/>
+          <rect x="130" y="206" width="8" height="8" rx="1" fill="#b5ff3a"/>
+          <rect x="142" y="212" width="16" height="8" rx="2" fill="#b5ff3a"/>
+          <rect x="80" y="246" width="20" height="20" rx="3" fill="#b5ff3a"/>
+          <rect x="106" y="250" width="8" height="8" rx="1" fill="#b5ff3a"/>
+          <rect x="118" y="246" width="8" height="8" rx="1" fill="#b5ff3a"/>
+          <rect x="130" y="250" width="8" height="8" rx="1" fill="#b5ff3a"/>
+          <rect x="142" y="246" width="16" height="20" rx="3" fill="#b5ff3a"/>
+        </svg>
+      </div>
+    </div>
+
+    <!-- PANEL 2: SERVICE REQUESTS -->
+    <div class="service-panel" id="panel-requests">
+      <div class="panel-text">
+        <div class="panel-number">02</div>
+        <div class="panel-tag">Service Requests</div>
+        <h2>Report issues and track them in real time</h2>
+        <p>Residents submit maintenance requests with photos and a description. The request goes straight to the right staff member — residents follow the status without making a single call.</p>
+        <ul class="service-features">
+          <li>7 categories: plumbing, electrical, cleaning, garbage, security, intercom, elevator</li>
+          <li>Attach photos as evidence directly from the phone</li>
+          <li>Live status: New → In Progress → Done</li>
+          <li>Admin assigns and manages all open requests</li>
+          <li>Staff see their personal task queue in the app</li>
+        </ul>
+      </div>
+      <div class="panel-visual dark">
+        <svg viewBox="0 0 280 280" xmlns="http://www.w3.org/2000/svg">
+          <!-- Request list card -->
+          <rect x="20" y="30" width="155" height="200" rx="18" fill="rgba(255,255,255,0.08)" stroke="rgba(255,255,255,0.2)" stroke-width="2"/>
+          <rect x="38" y="56" width="120" height="16" rx="6" fill="rgba(255,255,255,0.5)"/>
+          <rect x="38" y="82" width="84" height="12" rx="5" fill="rgba(255,255,255,0.28)"/>
+          <rect x="38" y="100" width="100" height="12" rx="5" fill="rgba(255,255,255,0.2)"/>
+          <!-- Status badges -->
+          <rect x="38" y="130" width="56" height="22" rx="8" fill="#b5ff3a"/>
+          <rect x="38" y="162" width="72" height="22" rx="8" fill="rgba(181,255,58,0.3)"/>
+          <rect x="38" y="194" width="48" height="22" rx="8" fill="rgba(255,255,255,0.12)"/>
+          <!-- Big check -->
+          <circle cx="222" cy="100" r="46" fill="#b5ff3a"/>
+          <path d="M202 100 l16 16 28-28" stroke="#191a23" stroke-width="5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+          <!-- Photo thumbnails -->
+          <rect x="180" y="168" width="60" height="46" rx="10" fill="rgba(255,255,255,0.1)" stroke="rgba(255,255,255,0.2)" stroke-width="1.5"/>
+          <rect x="184" y="172" width="52" height="28" rx="6" fill="rgba(181,255,58,0.2)"/>
+          <rect x="184" y="204" width="32" height="6" rx="3" fill="rgba(255,255,255,0.3)"/>
+          <rect x="184" y="214" width="22" height="6" rx="3" fill="rgba(255,255,255,0.18)"/>
+          <rect x="198" y="230" width="60" height="46" rx="10" fill="rgba(255,255,255,0.08)" stroke="rgba(255,255,255,0.2)" stroke-width="1.5"/>
+        </svg>
+      </div>
+    </div>
+
+    <!-- PANEL 3: BARRIER & PARKING -->
+    <div class="service-panel" id="panel-barrier">
+      <div class="panel-text">
+        <div class="panel-number">03</div>
+        <div class="panel-tag">Barrier &amp; Parking Control</div>
+        <h2>Smart access and real-time parking management</h2>
+        <p>Guards control the barrier from the app and view the full log of vehicle events. IoT sensors on each spot update occupancy in real time — residents see their spot's status without going outside.</p>
+        <ul class="service-features">
+          <li>Guards open and close the barrier from the app</li>
+          <li>Full timestamped log of all vehicle movements</li>
+          <li>IoT sensors detect occupancy of each parking spot</li>
+          <li>Permanent spots assigned to specific residents</li>
+          <li>Residents get an alert if their spot is taken</li>
+          <li>Admin sees the full lot occupancy at a glance</li>
+        </ul>
+      </div>
+      <div class="panel-visual green">
+        <svg viewBox="0 0 280 280" xmlns="http://www.w3.org/2000/svg">
+          <!-- Road / barrier bar -->
+          <rect x="10" y="128" width="260" height="16" rx="8" fill="#191a23"/>
+          <!-- Barrier pole -->
+          <rect x="28" y="80" width="14" height="58" rx="5" fill="#191a23"/>
+          <!-- Barrier arm -->
+          <rect x="38" y="80" width="110" height="14" rx="5" fill="#191a23"/>
+          <!-- App button -->
+          <circle cx="220" cy="110" r="48" fill="#191a23"/>
+          <circle cx="220" cy="110" r="30" fill="#b5ff3a"/>
+          <rect x="208" y="102" width="24" height="16" rx="4" fill="#191a23"/>
+          <!-- Parking grid -->
+          <rect x="20" y="162" width="62" height="40" rx="8" fill="#191a23" opacity="0.15" stroke="#191a23" stroke-width="1.5"/>
+          <rect x="22" y="164" width="28" height="10" rx="3" fill="#191a23" opacity="0.5"/>
+          <rect x="22" y="180" width="18" height="10" rx="3" fill="#191a23"/>
+          <rect x="92" y="162" width="62" height="40" rx="8" fill="#191a23" opacity="0.15" stroke="#191a23" stroke-width="1.5"/>
+          <rect x="94" y="164" width="28" height="10" rx="3" fill="#191a23" opacity="0.5"/>
+          <rect x="94" y="180" width="18" height="10" rx="3" fill="#191a23" opacity="0.3"/>
+          <rect x="164" y="162" width="62" height="40" rx="8" fill="#191a23" stroke="#191a23" stroke-width="1.5"/>
+          <rect x="166" y="164" width="28" height="10" rx="3" fill="#b5ff3a" opacity="0.8"/>
+          <rect x="166" y="180" width="18" height="10" rx="3" fill="#b5ff3a"/>
+          <rect x="20" y="212" width="62" height="40" rx="8" fill="#191a23" opacity="0.15" stroke="#191a23" stroke-width="1.5"/>
+          <rect x="92" y="212" width="62" height="40" rx="8" fill="#191a23" opacity="0.15" stroke="#191a23" stroke-width="1.5"/>
+          <rect x="164" y="212" width="62" height="40" rx="8" fill="#191a23" opacity="0.15" stroke="#191a23" stroke-width="1.5"/>
+        </svg>
+      </div>
+    </div>
+
+    <!-- PANEL 4: COMMUNICATION -->
+    <div class="service-panel" id="panel-communication">
+      <div class="panel-text">
+        <div class="panel-number">04</div>
+        <div class="panel-tag">Communication Tools</div>
+        <h2>Keep every resident informed, instantly</h2>
+        <p>Building management publishes announcements that reach all residents as push notifications. Security alerts are broadcast in real time — no notice boards, no missed messages.</p>
+        <ul class="service-features">
+          <li>Management publishes announcements from the admin panel</li>
+          <li>Residents receive instant push notifications via Firebase</li>
+          <li>Dedicated notifications feed with read/unread status</li>
+          <li>Security and sensor alerts delivered in real time</li>
+          <li>Full notification history available in the app</li>
+        </ul>
+      </div>
+      <div class="panel-visual dark">
+        <svg viewBox="0 0 280 280" xmlns="http://www.w3.org/2000/svg">
+          <!-- Announcement card -->
+          <rect x="20" y="40" width="155" height="110" rx="16" fill="rgba(255,255,255,0.08)" stroke="rgba(255,255,255,0.2)" stroke-width="2"/>
+          <rect x="36" y="64" width="122" height="14" rx="5" fill="rgba(255,255,255,0.45)"/>
+          <rect x="36" y="86" width="84" height="12" rx="5" fill="#b5ff3a" opacity="0.8"/>
+          <rect x="36" y="106" width="100" height="10" rx="4" fill="rgba(255,255,255,0.2)"/>
+          <path d="M115 150 l22 26 22-26" fill="none" stroke="rgba(255,255,255,0.3)" stroke-width="3"/>
+          <!-- Notification bubble -->
+          <circle cx="224" cy="90" r="44" fill="#b5ff3a"/>
+          <rect x="206" y="74" width="36" height="7" rx="3.5" fill="#191a23"/>
+          <rect x="206" y="87" width="28" height="7" rx="3.5" fill="#191a23"/>
+          <rect x="206" y="100" width="32" height="7" rx="3.5" fill="#191a23"/>
+          <!-- Push notification pill -->
+          <rect x="30" y="176" width="220" height="56" rx="14" fill="rgba(255,255,255,0.07)" stroke="rgba(255,255,255,0.18)" stroke-width="1.5"/>
+          <circle cx="58" cy="204" r="18" fill="#b5ff3a"/>
+          <path d="M50 204l6 6 10-10" stroke="#191a23" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+          <rect x="84" y="192" width="144" height="10" rx="4" fill="rgba(255,255,255,0.4)"/>
+          <rect x="84" y="208" width="100" height="10" rx="4" fill="rgba(255,255,255,0.2)"/>
+          <!-- Second push -->
+          <rect x="30" y="242" width="220" height="30" rx="10" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
+          <rect x="48" y="249" width="100" height="8" rx="3" fill="rgba(255,255,255,0.2)"/>
+          <rect x="48" y="259" width="72" height="6" rx="3" fill="rgba(255,255,255,0.12)"/>
+        </svg>
+      </div>
+    </div>
+
+    <!-- PANEL 5: VOTING -->
+    <div class="service-panel" id="panel-voting">
+      <div class="panel-text">
+        <div class="panel-number">05</div>
+        <div class="panel-tag">Resident Voting</div>
+        <h2>Give residents a voice in complex decisions</h2>
+        <p>Building management creates polls on community matters. Residents vote directly in the app and results are visible to everyone in real time — no meetings required.</p>
+        <ul class="service-features">
+          <li>Management creates polls with custom options and deadlines</li>
+          <li>Residents vote from the app in one tap</li>
+          <li>Real-time vote counts visible to all participants</li>
+          <li>Results stored for transparency and accountability</li>
+          <li>Voting periods close automatically at the deadline</li>
+        </ul>
+      </div>
+      <div class="panel-visual gray">
+        <svg viewBox="0 0 280 280" xmlns="http://www.w3.org/2000/svg">
+          <!-- Poll card -->
+          <rect x="20" y="24" width="190" height="230" rx="18" fill="#fff" stroke="#191a23" stroke-width="2.5"/>
+          <rect x="38" y="50" width="154" height="16" rx="6" fill="#191a23" opacity="0.5"/>
+          <!-- Option A bar -->
+          <rect x="38" y="84" width="154" height="32" rx="8" fill="#f3f3f3" stroke="#191a23" stroke-width="1.5"/>
+          <rect x="38" y="84" width="110" height="32" rx="8" fill="#b5ff3a"/>
+          <rect x="46" y="94" width="50" height="10" rx="4" fill="#191a23" opacity="0.6"/>
+          <!-- Option B bar -->
+          <rect x="38" y="126" width="154" height="32" rx="8" fill="#f3f3f3" stroke="#191a23" stroke-width="1.5"/>
+          <rect x="38" y="126" width="70" height="32" rx="8" fill="#191a23" opacity="0.15"/>
+          <rect x="46" y="136" width="50" height="10" rx="4" fill="#191a23" opacity="0.4"/>
+          <!-- Option C bar -->
+          <rect x="38" y="168" width="154" height="32" rx="8" fill="#f3f3f3" stroke="#191a23" stroke-width="1.5"/>
+          <rect x="38" y="168" width="40" height="32" rx="8" fill="#191a23" opacity="0.1"/>
+          <rect x="46" y="178" width="50" height="10" rx="4" fill="#191a23" opacity="0.3"/>
+          <!-- Vote count -->
+          <rect x="38" y="216" width="154" height="24" rx="6" fill="#191a23" opacity="0.06"/>
+          <rect x="46" y="222" width="80" height="10" rx="4" fill="#191a23" opacity="0.3"/>
+          <!-- Check badge -->
+          <circle cx="250" cy="60" r="34" fill="#191a23"/>
+          <path d="M236 60l10 10 18-18" stroke="#b5ff3a" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </div>
+    </div>
+
+    <!-- PANEL 6: ANALYTICS -->
+    <div class="service-panel" id="panel-analytics">
+      <div class="panel-text">
+        <div class="panel-number">06</div>
+        <div class="panel-tag">Analytics &amp; Monitoring</div>
+        <h2>Full visibility over your complex in real time</h2>
+        <p>The admin dashboard aggregates data from all IoT sensors, parking spots, and service requests in one place — so administrators can see the health of the entire building at a glance.</p>
+        <ul class="service-features">
+          <li>Real-time status of all IoT sensors across the complex</li>
+          <li>Online/offline tracking with instant failure alerts</li>
+          <li>Parking lot occupancy with spot-level detail</li>
+          <li>Service request statistics and response times</li>
+          <li>Full security event history with resolution status</li>
+          <li>Per-entrance sensor grouping for large complexes</li>
+        </ul>
+      </div>
+      <div class="panel-visual dark">
+        <svg viewBox="0 0 280 260" xmlns="http://www.w3.org/2000/svg">
+          <!-- Chart frame -->
+          <rect x="10" y="30" width="260" height="150" rx="14" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.12)" stroke-width="1.5"/>
+          <!-- Bars -->
+          <rect x="28" y="120" width="22" height="52" rx="4" fill="rgba(255,255,255,0.15)"/>
+          <rect x="58" y="96"  width="22" height="76" rx="4" fill="rgba(255,255,255,0.15)"/>
+          <rect x="88" y="68"  width="22" height="104" rx="4" fill="#b5ff3a"/>
+          <rect x="118" y="84" width="22" height="88" rx="4" fill="rgba(255,255,255,0.15)"/>
+          <rect x="148" y="106" width="22" height="66" rx="4" fill="rgba(255,255,255,0.15)"/>
+          <rect x="178" y="78" width="22" height="94" rx="4" fill="rgba(255,255,255,0.15)"/>
+          <rect x="208" y="56" width="22" height="116" rx="4" fill="rgba(255,255,255,0.1)"/>
+          <!-- Trend line -->
+          <polyline points="39,118 69,94 99,66 129,82 159,104 189,76 219,54"
+            fill="none" stroke="#b5ff3a" stroke-width="3"
+            stroke-linecap="round" stroke-linejoin="round"/>
+          <circle cx="99" cy="66" r="7" fill="#fff"/>
+          <circle cx="219" cy="54" r="7" fill="#b5ff3a" stroke="#fff" stroke-width="2"/>
+          <!-- Stat cards -->
+          <rect x="10" y="196" width="120" height="56" rx="12" fill="rgba(255,255,255,0.06)" stroke="rgba(255,255,255,0.12)" stroke-width="1.5"/>
+          <rect x="22" y="208" width="48" height="10" rx="4" fill="rgba(255,255,255,0.4)"/>
+          <rect x="22" y="224" width="36" height="14" rx="4" fill="#b5ff3a"/>
+          <rect x="150" y="196" width="120" height="56" rx="12" fill="rgba(255,255,255,0.06)" stroke="rgba(255,255,255,0.12)" stroke-width="1.5"/>
+          <rect x="162" y="208" width="48" height="10" rx="4" fill="rgba(255,255,255,0.4)"/>
+          <rect x="162" y="224" width="60" height="10" rx="4" fill="rgba(255,255,255,0.2)"/>
+        </svg>
+      </div>
+    </div>
+
+  </div><!-- .service-panels-wrap -->
+</div>
+
+<!-- CTA -->
+<div class="section-wrap">
+  <div class="cta-banner">
+    <h2>Want to see all of this live in a demo?</h2>
+    <a href="contacts.html" class="btn-black">Request a demo</a>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-top">
+
+      <div class="footer-contact">
+        <a href="index.html" class="footer-logo">
+          <div class="footer-logo-icon">
+            <svg viewBox="0 0 24 24" fill="none"><path d="M3 10.5L12 3L21 10.5V20C21 20.55 20.55 21 20 21H15V16H9V21H4C3.45 21 3 20.55 3 20V10.5Z" fill="#191a23"/></svg>
+          </div>
+          SmartResidency
+        </a>
+        <div class="contact-label">Contact us:</div>
+        <p>
+          Email: info@smartresidency.io<br>
+          Phone: +7 701 000 0000<br>
+          Address: Astana, Kazakhstan
+        </p>
+      </div>
+
+      <nav class="footer-nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contacts.html">Contact Us</a></li>
+        </ul>
+      </nav>
+
+      <div class="footer-newsletter-wrap">
+        <p>Subscribe to our news</p>
+        <div class="footer-newsletter">
+          <input type="email" id="newsletter-email" placeholder="Email" />
+          <button class="btn-green" onclick="handleSubscribe()">Subscribe to news</button>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <p>&#169; 2025 SmartResidency. All Rights Reserved.</p>
+      <div class="footer-social">
+        <a href="#" title="LinkedIn">in</a>
+        <a href="#" title="Facebook">f</a>
+        <a href="#" title="Twitter">X</a>
+      </div>
+      <a href="#" class="privacy-link">Privacy Policy</a>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
